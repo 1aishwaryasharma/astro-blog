@@ -25,6 +25,13 @@
 - We can also use *.css files by importing them into our files
 - We can also use external CSS libraries like tailwind.
 - npx astro add tailwind
-- 
+
+## Routing
+
+- Astro has support for both static and dynamic routing
+- Each file creates a new route
+- folders create new fragments of the URL
+- index maps to /
+
 
 
