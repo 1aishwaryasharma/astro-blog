@@ -1,0 +1,19 @@
+---
+interface Props {
+    href: string;
+    ariaLabel?: string;
+    class?: string;
+    isExternal?: boolean;
+    rel?: string;
+    target?: string;
+}
+
+const { href, ariaLabel, class: classList, isExternal, rel='', target } = Astro.props;
+---
+<a 
+href={href} 
+aria-label={ariaLabel}
+class:list={['hover:text-blue-500', classList]}
+rel={`${rel} ${isExternal ? 'nofollow noopener noreferrer external' : ''}`}
+target={target}
+><slot /></a>
