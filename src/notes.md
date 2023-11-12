@@ -34,4 +34,7 @@
 - index maps to /
 
 
+## Layout
 
+- Whatever is defined in the `interface Props` will be received in `Astro.props`
+- `<slot />` can be thought of as `children` in React.
