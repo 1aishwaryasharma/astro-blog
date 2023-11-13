@@ -1,7 +1,10 @@
 ---
+import { Image } from "astro:assets";
 import Layout from "../layouts/Layout.astro";
+import profilePicture from '../assets/profile-picture.jpg';
 ---
 
 <Layout title="About">
-    <h1>This is the about page</h1>
+    <Image src={profilePicture} alt="profile picture" class="rounded-full" width={512} quality="max"/>
+    <h1>Hello, I'm 1aishwaryasharma. I'm a software engineer.</h1>
 </Layout>

@@ -38,3 +38,8 @@
 
 - Whatever is defined in the `interface Props` will be received in `Astro.props`
 - `<slot />` can be thought of as `children` in React.
+
+## Static Assets
+
+- anything under public is accessible in the URL relative to the base domain and served statically,
+- assets inside `assets` folder are optimized automatically ?
